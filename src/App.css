@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+@import "~antd/dist/antd.css";
+:root {
+  --main-bg-color: rgb(35, 49, 112);
+  --secondary-bg-color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout-footer {
+  background: var(--secondary-bg-color);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-layout-header--white {
+  color: var(--secondary-bg-color);
+  background-color: var(--main-bg-color);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-layout-content--custom {
+  background: var(--secondary-bg-color);
+  padding: 25px 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.search__form {
+  margin-bottom: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__button {
+  background: var(--main-bg-color);
+  color: var(--secondary-bg-color);
 }
